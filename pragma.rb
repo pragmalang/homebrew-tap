@@ -9,6 +9,8 @@ class Pragma < Formula
     bottle :unneeded
   
     def install
+      prefix.install "lib"
+      prefix.install "jre"
       bin.install "bin/pragma"
     end
 end
