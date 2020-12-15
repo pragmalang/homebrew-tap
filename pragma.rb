@@ -10,7 +10,11 @@ class Pragma < Formula
   
     def install
       prefix.install "lib"
-      prefix.install "jre"
+      begin
+        prefix.install "jre"
+      rescue
+        puts "WARNING: JRE is not included with the installation. You may need to install Java."
+      end
       bin.install "bin/pragma"
     end
 end
