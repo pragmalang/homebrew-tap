@@ -16,6 +16,6 @@ class Pragma < Formula
         opoo "JRE is not included with the installation. You may need to install Java."
       end
       prefix.install "bin"
-      bin.install_symlink prefix/"bin"/"pragma"
+      prefix.install_symlink prefix/"bin"/"pragma"
     end
 end
