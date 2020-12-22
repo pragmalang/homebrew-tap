@@ -9,12 +9,13 @@ class Pragma < Formula
     bottle :unneeded
   
     def install
-      bin.install "lib"
+      prefix.install "lib"
       begin
-        bin.install "jre"
+        prefix.install "jre"
       rescue
         opoo "JRE is not included with the installation. You may need to install Java."
       end
-      prefix.install "bin/pragma"
+      prefix.install "bin"
+      bin.install_symlink prefix/"bin"/"pragma"
     end
 end
