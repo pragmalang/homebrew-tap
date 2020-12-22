@@ -15,6 +15,6 @@ class Pragma < Formula
       rescue
         opoo "JRE is not included with the installation. You may need to install Java."
       end
-      bin.install "bin/pragma"
+      prefix.install "bin/pragma"
     end
 end
