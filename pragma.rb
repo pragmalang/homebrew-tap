@@ -8,7 +8,7 @@ class Pragma < Formula
   
     bottle :unneeded
 
-    depends_on java: "1.8+" if MacOS.version < :catalina
+    depends_on java: "1.8+"
     depends_on "openjdk" if MacOS.version >= :catalina
   
     def install
