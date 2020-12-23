@@ -11,7 +11,7 @@ class Pragma < Formula
     def install
       bin.install "pragma.jar"
       File.write(bin/"pragma", "#!/bin/bash\njava -jar pragma.jar \"$@\" || echo 'Could not run java command. Please install Java from https://www.oracle.com/java/technologies/javase-jdk15-downloads.html before running pragma.' && false")
-      system "chmod" "+x" bin/"pragma"
+      system "chmod", "+x", bin/"pragma"
       prefix.install_symlink bin/"pragma"
     end
 end
