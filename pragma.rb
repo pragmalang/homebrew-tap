@@ -18,7 +18,7 @@ class Pragma < Formula
       prefix.install "bin"
       prefix.install_symlink prefix/"bin"/"pragma"
 
-      Dir.glob(prefix/"*").each { |file| 
+      Dir.glob(prefix/"*/*").each { |file| 
         begin
           system "xattr", "-d", "com.apple.quarantine", file
           ohai "Removed com.apple.quarantine xattr attribute from #{file}"
