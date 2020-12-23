@@ -7,6 +7,9 @@ class Pragma < Formula
     license "Apache-2.0"
   
     bottle :unneeded
+
+    depends_on java: "1.8+" if MacOS.version < :catalina
+    depends_on "openjdk" if MacOS.version >= :catalina
   
     def install
       prefix.install "lib"
