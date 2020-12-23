@@ -8,8 +8,7 @@ class Pragma < Formula
   
     bottle :unneeded
 
-    depends_on java: "1.11+" if MacOS.version < :catalina
-    depends_on "openjdk" if MacOS.version >= :catalina
+    depends_on java: "1.11+"
 
     def install
       prefix.install "lib"
