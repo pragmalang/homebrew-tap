@@ -2,7 +2,7 @@ class Pragma < Formula
     desc "The Pragma CLI"
     homepage "https://github.com/pragmalang/pragma"
     url "https://github.com/pragmalang/pragma/releases/download/0.2.0/pragma.jar"
-    sha256 "aab25b35b03823fecb440fa2a64dddf4896d32dece810278aa7c42bcf51cb379"
+    sha256 "4f265322cba77a86a5feee0099ad2a085c717dbb775134615afd8ec9001a5d67"
     version "0.2.0"
     license "Apache-2.0"
   
