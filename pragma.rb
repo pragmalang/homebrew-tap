@@ -1,9 +1,9 @@
 class Pragma < Formula
+    version "0.3.0"
     desc "The Pragma CLI"
     homepage "https://github.com/pragmalang/pragma"
-    url "https://github.com/pragmalang/pragma/releases/download/0.2.1/pragma.jar"
-    sha256 "e58c34c771b9772abecedc911e37c49ebadd8481b640c234ab63837c90702c43"
-    version "0.2.1"
+    url "https://github.com/pragmalang/pragma/releases/download/#{version}/pragma.jar"
+    sha256 "4ce3c9140794e8342eb5d21113b7c692396043d798778063452e946919e68ad8"
     license "Apache-2.0"
   
     bottle :unneeded
